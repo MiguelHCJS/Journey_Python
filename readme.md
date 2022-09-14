@@ -1,8 +1,6 @@
 ﻿# My Tech Guide, Dev em T - Alura
 
-De acordo com o guia de carreira da Alura, estou montando este repositório para que eu possa manter o roteiro atualizado e garantir a abrangência ao máximo.
-Escolhida a linguagem de programação: **Python**
-Não foi a primeira que eu escolhi, comecei a brincar com HTML e CSS, mas queria mais, queria poder fazer algo para o meu dia a dia, e decidi focar em Python.
+De acordo com o guia de carreira da Alura, estou montando este repositório para que eu possa manter o roteiro atualizado e garantir a abrangência ao máximo. Escolhi a linguagem de programação: **Python**, não é meu primeiro contato com programação, comecei a brincar com HTML e CSS no front-end, mas queria mais, queria poder fazer algo para o meu dia a dia, e decidi focar em Python. Este é o caminho Dev em T da linguagem Python no projeto da Alura, [TechGuide](https://techguide.sh/):
 
 ## Nivel 1
 
