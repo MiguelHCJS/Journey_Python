@@ -1,4 +1,4 @@
-﻿# My Tech Guide
+﻿# My Tech Guide, Dev em T - Alura
 
 De acordo com o guia de carreira da Alura, estou montando este repositório para que eu possa manter o roteiro atualizado e garantir a abrangência ao máximo.
 Escolhida a linguagem de programação: **Python**
