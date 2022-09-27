@@ -1,66 +1,29 @@
-# 1. Faça um Programa que mostre a mensagem "Alo mundo" na tela.
 from math import floor, ceil
-print('Olá mundo!')
+from ExeEstSeq import questao2, questao3, questao4, questao5, questao6, questao7, questao8
 
+# 1. Faça um Programa que mostre uma mensagem na tela.
+print('--- Bem vindo a lista de atividades sequesciais ---')
 
 # 2. Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número]."""
-num = input('Digite um número: ')
-
-print(f'O número digitado foi: {num}')
-
+questao2()
 
 # 3. Faça um Programa que peça dois números e imprima a soma.
-num1 = int(input('Digite um número para a soma: '))
-num2 = int(input('Digite outro número para compor a soma: '))
-
-print(f'A soma é: {num1 + num2}')
+questao3()
 
 # 4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
-notas = []
-notas_trimestrais = 0
-semestre = 1
-
-while notas_trimestrais < 4:
-    nota = int(input(f'Nota do semestre {semestre}: '))
-    notas.append(nota)
-    notas_trimestrais += 1
-    semestre += 1
-
-media = sum(notas) / len(notas)
-print(f'A média é: {media}')
+questao4()
 
 # 5. Faça um Programa que converta metros para centímetros.
-convert = int(
-    input('De metros para centímetros, quantos metros quer converter? '))
-convertido = convert * 100
-
-print(f'{convert} são {convertido} centímetros.')
+questao5()
 
 # 6. Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
-raio = int(input(
-    'Qual o raio(em metros) do circulo para que possamos calcular a sua área: '))
-area = 3.14 * raio**2
-
-print(f'A área do circulo é de {area}m, de acordo com o raio {raio}m.')
+questao6()
 
 # 7. Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
-print('--Calculando a área do quadrado--')
-
-largura = int(input('Qual a largura da área(em metros)? '))
-comprimento = int(input('Qual a comprimento da área(em metros)? '))
-area_quadrado = (largura * comprimento) * 2
-
-print(f'A área ao dobro é de {area_quadrado}m²')
+questao7()
 
 # 8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
-print('--Calculando valor da hora de trabalho--')
-
-salario = int(input('Qual o valor do seu salário? '))
-horas_de_trabalho = int(input('Quantas horas por mês, trabalhada? '))
-salario_convertido = salario / horas_de_trabalho
-
-print(
-    f'\nA quantidade de horas trabalhas é de {horas_de_trabalho}h\nCom o salário de {salario}\nValor por hora de {salario_convertido:.2f}')
+questao8()
 
 # 9. Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
 print('__Conversor de temperatura, Fahrenheit → Celsius.__')
@@ -68,8 +31,7 @@ print('__Conversor de temperatura, Fahrenheit → Celsius.__')
 tempF = int(input('Insira a temperatura em Fahrenheit: '))
 convertidoC = (tempF - 32) / 1.8
 
-print(
-    f'A temperatura em {tempF}°F, representa aproximadamente {convertidoC:.0f}°C')
+print(f'A temperatura em {tempF}°F, representa aproximadamente {convertidoC:.0f}°C')
 
 # 10. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
 # 1.1 o produto do dobro do primeiro com metade do segundo .
@@ -143,8 +105,7 @@ print(f'Pensão: {salario * 0.3}')
 print(f'Salario liquido: {salario_liquido:.2f}')
 
 # 15. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
-area_para_pintar = int(
-    input('Quantos metros quadrados precisam ser pintados? '))
+area_para_pintar = int(input('Quantos metros quadrados precisam ser pintados? '))
 litro_tinta = int(area_para_pintar / 3)
 print(f'Quantidade de litros a ser usada: {litro_tinta:.0f}L')
 

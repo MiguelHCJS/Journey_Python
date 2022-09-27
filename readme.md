@@ -1,10 +1,10 @@
-﻿# My Tech Guide, Dev em T - Alura
+﻿# **Tech Guide, Dev em T - Alura**
 
-De acordo com o guia de carreira da Alura, estou montando este repositório para que eu possa manter o roteiro atualizado e garantir a abrangência ao máximo. Escolhi a linguagem de programação: **Python**, não é meu primeiro contato com programação, comecei a brincar com HTML e CSS no front-end, mas queria mais, queria poder fazer algo para o meu dia a dia, e decidi focar em Python. Este é o caminho Dev em T da linguagem Python no projeto da Alura, [TechGuide](https://techguide.sh/):
+Estou montando este repositório para que eu possa manter o roteiro atualizado e garantir a abrangência ao máximo do meu conhecimento em Python. Não é meu primeiro contato com programação, comecei a estudar o front-end com HTML e CSS, mas queria mais, queria poder fazer algo para o meu dia a dia e então decidi focar em Python. Este é o caminho Dev em T da linguagem Python no projeto da Alura, [TechGuide](https://techguide.sh/):
 
-## Nivel 1
+### Nivel 1
 
-- [ ] [Python Fundamentos]()
+- [ ] [Python Fundamentos](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/00_python-fundamentos.md)
 - [ ] [Estrutura de dados]()
 - [ ] [Coleções]()
 - [ ] [Conceito de Orientação a objeto]()
@@ -12,7 +12,7 @@ De acordo com o guia de carreira da Alura, estou montando este repositório para
 
 Segundo o guia do qual estou me baseando para criar meu roteiro, existe no topo do T, as vertentes: Infraestrutura e Front-end, optei em não direcionar no momento nesse roteiro inicial, mas para quem quiser ver, no final tem um link direto para o TechGuide do Python segundo o Grupo Alura.
 
-## Nivel 2
+### Nivel 2
 
 - [ ] [Python testes]()
 - [ ] [Design patterns]()
@@ -24,7 +24,7 @@ Segundo o guia do qual estou me baseando para criar meu roteiro, existe no topo 
 
 Neste momento ou até antes, já pretendo ter publicado um repositório no qual aplicarei praticamente tudo para aplicar em cima de um RPG, o conhecimento adquirito.
 
-## Nivel 3
+### Nivel 3
 
 - [ ] [Tipagem estática]()
 - [ ] [Geradores]()
@@ -34,3 +34,31 @@ Neste momento ou até antes, já pretendo ter publicado um repositório no qual 
 - [ ] [Pooling de processos]()
 
 [TechGuide_Alura](https://techguide.sh/pt-BR/path/python/)
+
+<br><br>
+
+# **Exercícios**
+
+### [Sequenciais]()
+
+### [Repetição]()
+
+### [Decisão]()
+
+### [Listas]()
+
+### [Funções]()
+
+### [Com strings]()
+
+### [Arquivos]()
+
+### [Classes]()
+
+<br><br>
+
+# **Sobre**
+
+### [Sobre listas]()
+
+### [Sobre dicionários]()
