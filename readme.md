@@ -5,7 +5,7 @@ Estou montando este repositório para que eu possa manter o roteiro atualizado e
 ### Nivel 1
 
 - [ ] [Python Fundamentos](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/00_python-fundamentos.md)
-- [ ] [Estrutura de dados]()
+- [ ] [Estrutura de dados](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/01_estrutura_de_dados.md)
 - [ ] [Coleções]()
 - [ ] [Conceito de Orientação a objeto]()
 - [ ] [Métodos especiais]()
