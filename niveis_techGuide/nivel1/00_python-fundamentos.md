@@ -35,7 +35,7 @@ Obs.: Todos os conceitos aqui, estão em um mini projeto:
 
   - [Demais operadores](https://www.devmedia.com.br/operadores-no-python/40693)
 
-- [x] Usar estruturas de **repetição** e laços ('while', 'for'...)
+- [x] Usar estruturas de **repetição**, laços ('while', 'for'...)
 
 - [x] Usar funções, passando parâmetros e argumentos
 
