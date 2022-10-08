@@ -2,7 +2,7 @@
 
 Para manipular, precisamos abstrair/representar um dado ou informação. A abstração pode usar diferentes tipos de variáveis e estrutura de dados, algumas informações básicas:
 
-Obs.: Todos os conceitos aqui, estão em um mini projeto: 
+Obs.: Todos os conceitos aqui, estão em um mini projeto:
 
 - [x] Conhecer os tipos primitivos:
 
