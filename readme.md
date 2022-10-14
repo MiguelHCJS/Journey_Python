@@ -41,7 +41,7 @@ Neste momento ou até antes, já pretendo ter publicado um repositório no qual 
 
 ### [Sequenciais](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20sequencial/exerc%C3%ADcios_estruturaSequencial.py)
 
-### [Repetição]()
+### [Repetição](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20de%20repeti%C3%A7%C3%A3o/exerc%C3%ADcios_estruturaDeRepeti%C3%A7%C3%A3o.py)
 
 ### [Decisão](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20de%20decisao/exerc%C3%ADcios_estruturaDeDecisao.py)
 
