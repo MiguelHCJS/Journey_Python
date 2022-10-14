@@ -63,4 +63,4 @@ Um array precisa ser importado da biblioteca Numpy, é mais rápido o acesso, us
 - [x] Funções anônimas
   - Função lambda ou função anônima, nada mais é do que funções que não precisam ser definidas(`def nome_funcao: ...`), tornando a tarefa mais ágil e objetiva.
 
-[Artigoes relacionados](https://techguide.sh/pt-BR/path/python/python-fundamentals/)
+[Artigos relacionados](https://techguide.sh/pt-BR/path/python/python-fundamentals/)
