@@ -1,16 +1,30 @@
-﻿# 1. Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
-while True:
+# -- QUESTÃO 1 --
+# 1. Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+def questao1():
+  while True:
     try:
-        nota = int(input('Digite a nota obtida em sua avaliação: '))
-        if nota >= 0 and nota <= 10:
-            print(f'Ótimo, sua nota foi {nota}')
-            break
-        else:
-            print('Digite uma nota menor que 10')
-    except ValueError:
-        print('Nota inválida, digite um número maior que 0 e menor que 10!')
+      nota = int(input('Digite uma nota: '))
+      if nota >= 0 and nota <= 10:
+        print(f'A nota atribuida foi {nota}')
+        break
+      elif nota < 0 or nota > 10:
+        print('Digite um número entre 0 e 10.')
+    except:
+      print('Valor digitado, inválido. Tente novamente, digite uma nota.')
 
+
+# -- QUESTÃO 2 --
 # 2. Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+def questao2():
+  while True:
+    usuario = input('Login: ')
+    senha = input('Password: ')
+    if senha != usuario and len(senha) >= 6:
+      print(f'Senha bem vindo(a), {usuario}!')
+      break
+    else:
+      print('Digite uma senha maior que 6 digitos e diferente do usuário.')
+
 
 """
 3. Faça um programa que leia e valide as seguintes informações:
