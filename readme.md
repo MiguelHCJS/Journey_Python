@@ -39,7 +39,7 @@ Neste momento ou até antes, já pretendo ter publicado um repositório no qual 
 
 # **Exercícios**
 
-### [Sequenciais]()
+### [Sequenciais](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20sequencial/exerc%C3%ADcios_estruturaSequencial.py)
 
 ### [Repetição]()
 
