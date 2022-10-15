@@ -1,4 +1,4 @@
-# Nivel 1 - Estrutura de dados
+# Nível 1 - Estrutura de dados
 
 - [x] Conhecer as principais estruturas de dados
 
@@ -79,6 +79,10 @@
 
     ## Dicionários
 
+    É um par de chave e valor, a chave no dicionário não se repete.
+    
+        dicionario = {'nome': 'valor', 'idade': valor}
+    
     ## Árvores
 
 - [ ] Implementar as principais estruturas de dados
