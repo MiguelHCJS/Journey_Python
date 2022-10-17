@@ -191,13 +191,39 @@ def questao5():
 ''' -- QUESTÃO 6 --
   Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
 '''
+def questão6():
+  num = [x for x in range(1, 21)]
 
+  for x in num:
+    print(x)
+
+  print(num)
+  
+  
 ''' -- QUESTÃO 7 --
 Faça um programa que leia 5 números e informe o maior número.
 '''
-
-# 8. Faça um programa que leia 5 números e informe a soma e a média dos números.
-
+def questao7():
+  numeros = []
+  quantidade_maxima = 5
+  while len(numeros) + 1 <= quantidade_maxima:
+    numero = int(input(f'Digite 5 numero(s), {len(numeros) + 1}/{quantidade_maxima}:') )
+    numeros.append(numero)
+  print(f'O maior número da lista: {numeros} é: {max(numeros)}')
+  
+'''
+8. Faça um programa que leia 5 números e informe a soma e a média dos números.
+'''
+def questao8():
+  numeros = []
+  quantidade_maxima = 5
+  while len(numeros) + 1 <= quantidade_maxima:
+    numero = int(input(f'Digite 5 numero(s), {len(numeros) + 1}/{quantidade_maxima}:') )
+    numeros.append(numero)
+  print(f'Soma da lista: {numeros} é: {sum(numeros)}')
+  print(f'Com uma média de {sum(numeros) / len(numeros)}')
+  
+  
 # 9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
 
 # 10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
