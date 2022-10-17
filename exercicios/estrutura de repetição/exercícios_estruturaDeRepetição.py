@@ -223,12 +223,25 @@ def questao8():
   print(f'Soma da lista: {numeros} é: {sum(numeros)}')
   print(f'Com uma média de {sum(numeros) / len(numeros)}')
   
-  
-# 9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
 
-# 10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+'''
+9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+'''
+def questao9():
+  num_impares = [x for x in range(1, 51) if x % 2 != 0]
+  print(num_impares)
 
-# 11. Altere o programa anterior para mostrar no final a soma dos números.
+
+'''
+10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles. Mostrar no final a soma dos números.
+'''
+def questao10():
+  num_inteiro1 = int(input('Digite um número inteiro: '))
+  num_inteiro2 = int(input(f'Digite mais um número inteiro, maior que {num_inteiro1}: '))
+  numeros_inteiros = [x for x in range(num_inteiro1, num_inteiro2) if x % 2 == 0]
+  print(f'Os números páres entre {num_inteiro1} e {num_inteiro2}: {numeros_inteiros}')
+  print(f'A soma de todos os números inteiros são: {sum(numeros_inteiros)}')
+
 
 """
 12. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
@@ -238,6 +251,17 @@ def questao8():
         ...
         5 X 10 = 50
 """
+def questao12():
+  while True:
+    try:
+      numero = int(input('Digite um número entre 1 e 10, para gerar a tabuada: '))
+      if numero >= 0 or numero <= 10
+      for x in range(1, 11):
+        print(f'{numero} x {x} = {numero * x}')
+      break
+    except:
+      print('Digite um número válido, entre 1 e 10.')
+
 
 """
 13. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
