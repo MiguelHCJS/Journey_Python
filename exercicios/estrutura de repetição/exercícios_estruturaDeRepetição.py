@@ -124,21 +124,69 @@ def questao3():
 """ -- QUESTÃO 4 --
   Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 """
-paisA = 80000
-paisB = 200000
+def questao4():
+  paisA = 80000
+  paisB = 200000
 
-contador_de_anos = 0
+  contador_de_anos = 0
 
-while paisA <= paisB:
-  paisA *= 1.03
-  paisB *= 1.015
-  contador_de_anos += 1
+  while paisA <= paisB:
+    paisA *= 1.03
+    paisB *= 1.015
+    contador_de_anos += 1
 
-print(f'Pais A tem {round(paisA * 1.03)} e Pais B {round(paisB * 1.015)}, levou {contador_de_anos} anos para se igualar.')
+  print(f'Pais A tem {round(paisA * 1.03)} e Pais B {round(paisB * 1.015)}, levou {contador_de_anos} anos para se igualar.')
 
+  
 ''' -- QUESTÃO 5 --
   Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
 '''
+def pegue_paisA():
+  while True:
+    try:
+      paisA = int(input('Número da população do Pais A: '))
+      break
+    except:
+      print('Digite número válido.')
+  return paisA
+
+def pegue_paisB():
+  while True:
+    try:
+      paisB = int(input('Número da população do Pais B: '))
+      break
+    except:
+      print('Digite número válido.')
+  return paisB
+
+def crescimento():
+ while True:
+   try:
+     crescimento_paisA = int(input('Crescimento em % do Pais A: '))
+     crescimento_paisB = int(input('Crescimento em % do Pais B: '))
+     ppaisA = (crescimento_paisA / 100) + 1
+     ppaisB = (crescimento_paisB / 100) + 1
+     break
+   except:
+     print('Digite valores válidos, 0 a 100.)')
+ return ppaisA, ppaisB
+
+
+
+def questao5():
+  paisA = pegue_paisA()
+  paisB = pegue_paisB()
+
+  contador_de_anos = 0
+
+  valor = crescimento()
+
+  while paisA <= paisB:
+    paisA *= valor[0]
+    paisB *= valor[1]
+    contador_de_anos += 1
+  print(f'Pais A tem {round(paisA)} Pais B {round(paisB)} levou {contador_de_anos} anos para se igualar.')
+
 
 ''' -- QUESTÃO 6 --
   Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
