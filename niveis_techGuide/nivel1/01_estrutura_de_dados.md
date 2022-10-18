@@ -1,14 +1,17 @@
-# Nível 1 - Estrutura de dados
+# Nível 1 — Estrutura de dados
 
 - [x] Conhecer as principais estruturas de dados
 
-    Normalmente os dados são tratados em conjunto, existe varias  formas de unir, relacionar, tratar e processar os dados, sendo chamados de estrutura de dados.
+    Normalmente os dados são tratados em conjunto, existe varias formas de unir, relacionar, tratar, processar,
+    chamados estrutura de dados.
     Essas estruturas têm seus métodos próprios de inserir, excluir, buscar, localizar, ordenar...
-    Estruturas lineares ou não lineares; Dados do mesmo tipo (homogêneas) ou de diferentes tipos(heterogêneas); Estáticos (tamanho/capacidade fixa) ou dinâmico(mutáveis).
+    Estruturas lineares ou não lineares, dados do mesmo tipo (homogêneas) ou de diferentes tipos(heterogêneas);
+    Estáticos (tamanho/capacidade fixa) ou dinâmico(mutáveis).
 
     ## Pilhas
 
-    O paradigma principal é por meio do LIFO - Last In, First Out (último a entrar, primeiro a sair), apenas dois métodos possíveis para manipular a pilha:
+    O paradigma principal é por meio do LIFO — *Last In*, *First Out* (último a entrar, primeiro a sair),
+    apenas dois métodos possíveis para manipular a pilha:
 
     1) Inserir elementos no topo da pilha;
     2) Remover elemento no topo da pilha;
@@ -27,7 +30,8 @@
 
     ## Fila
 
-    O paradigma principal é por meio do FIFO - First In, First Out(Primeiro a entrar, primeiro a sair), apenas dois métodos possíveis para manipular a fila:
+    O paradigma principal é por meio do FIFO — First In, First Out(Primeiro a entrar, primeiro a sair),
+    apenas dois métodos possíveis para manipular a fila:
 
     1) Inserir elemento no final da fila;
     2) Remover elemento no início da fila;
@@ -69,7 +73,8 @@
 
     ## Conjuntos
 
-    Uma lista não ordenada de elementos **únicos**, dos quais não se é possível repetir. Em uma lista comum é possível repetir valores iguais, em um conjunto, não.
+    Uma lista não ordenada de elementos **únicos**, dos quais não se é possível repetir. Em uma lista comum é possível
+    repetir valores iguais, em um conjunto, não.
 
         lista = [1, 1, 1, 5, 7]
 
@@ -89,6 +94,6 @@
 
 [Artigos relacionados](https://techguide.sh/pt-BR/path/python/data-structures/)
 
-[Referência - Alura](https://www.alura.com.br/artigos/estruturas-de-dados-introducao?gclid=CjwKCAjwm8WZBhBUEiwA178UnJ4j8AEgVf-iqVT7ewu21VlnDAlGs9nARlAiXAOgMYn22pwcC8a_BxoC5iUQAvD_BwE)
+[Referência — Alura](https://www.alura.com.br/artigos/estruturas-de-dados-introducao?gclid=CjwKCAjwm8WZBhBUEiwA178UnJ4j8AEgVf-iqVT7ewu21VlnDAlGs9nARlAiXAOgMYn22pwcC8a_BxoC5iUQAvD_BwE)
 
-[Referência - Algoritmosempython.com.br](https://algoritmosempython.com.br/cursos/algoritmos-python/intro/)
+[Referência - algoritmosempython.com.br](https://algoritmosempython.com.br/cursos/algoritmos-python/intro/)
