@@ -124,37 +124,124 @@ def questao3():
 """ -- QUESTÃO 4 --
   Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 """
-paisA = 80000
-paisB = 200000
+def questao4():
+  paisA = 80000
+  paisB = 200000
 
-contador_de_anos = 0
+  contador_de_anos = 0
 
-while paisA <= paisB:
-  paisA *= 1.03
-  paisB *= 1.015
-  contador_de_anos += 1
+  while paisA <= paisB:
+    paisA *= 1.03
+    paisB *= 1.015
+    contador_de_anos += 1
 
-print(f'Pais A tem {round(paisA * 1.03)} e Pais B {round(paisB * 1.015)}, levou {contador_de_anos} anos para se igualar.')
+  print(f'Pais A tem {round(paisA * 1.03)} e Pais B {round(paisB * 1.015)}, levou {contador_de_anos} anos para se igualar.')
 
+  
 ''' -- QUESTÃO 5 --
   Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
 '''
+def pegue_paisA():
+  while True:
+    try:
+      paisA = int(input('Número da população do Pais A: '))
+      break
+    except:
+      print('Digite número válido.')
+  return paisA
+
+def pegue_paisB():
+  while True:
+    try:
+      paisB = int(input('Número da população do Pais B: '))
+      break
+    except:
+      print('Digite número válido.')
+  return paisB
+
+def crescimento():
+ while True:
+   try:
+     crescimento_paisA = int(input('Crescimento em % do Pais A: '))
+     crescimento_paisB = int(input('Crescimento em % do Pais B: '))
+     ppaisA = (crescimento_paisA / 100) + 1
+     ppaisB = (crescimento_paisB / 100) + 1
+     break
+   except:
+     print('Digite valores válidos, 0 a 100.)')
+ return ppaisA, ppaisB
+
+
+
+def questao5():
+  paisA = pegue_paisA()
+  paisB = pegue_paisB()
+
+  contador_de_anos = 0
+
+  valor = crescimento()
+
+  while paisA <= paisB:
+    paisA *= valor[0]
+    paisB *= valor[1]
+    contador_de_anos += 1
+  print(f'Pais A tem {round(paisA)} Pais B {round(paisB)} levou {contador_de_anos} anos para se igualar.')
+
 
 ''' -- QUESTÃO 6 --
   Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
 '''
+def questão6():
+  num = [x for x in range(1, 21)]
 
+  for x in num:
+    print(x)
+
+  print(num)
+  
+  
 ''' -- QUESTÃO 7 --
 Faça um programa que leia 5 números e informe o maior número.
 '''
+def questao7():
+  numeros = []
+  quantidade_maxima = 5
+  while len(numeros) + 1 <= quantidade_maxima:
+    numero = int(input(f'Digite 5 numero(s), {len(numeros) + 1}/{quantidade_maxima}:') )
+    numeros.append(numero)
+  print(f'O maior número da lista: {numeros} é: {max(numeros)}')
+  
+'''
+8. Faça um programa que leia 5 números e informe a soma e a média dos números.
+'''
+def questao8():
+  numeros = []
+  quantidade_maxima = 5
+  while len(numeros) + 1 <= quantidade_maxima:
+    numero = int(input(f'Digite 5 numero(s), {len(numeros) + 1}/{quantidade_maxima}:') )
+    numeros.append(numero)
+  print(f'Soma da lista: {numeros} é: {sum(numeros)}')
+  print(f'Com uma média de {sum(numeros) / len(numeros)}')
+  
 
-# 8. Faça um programa que leia 5 números e informe a soma e a média dos números.
+'''
+9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+'''
+def questao9():
+  num_impares = [x for x in range(1, 51) if x % 2 != 0]
+  print(num_impares)
 
-# 9. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
 
-# 10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+'''
+10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles. Mostrar no final a soma dos números.
+'''
+def questao10():
+  num_inteiro1 = int(input('Digite um número inteiro: '))
+  num_inteiro2 = int(input(f'Digite mais um número inteiro, maior que {num_inteiro1}: '))
+  numeros_inteiros = [x for x in range(num_inteiro1, num_inteiro2) if x % 2 == 0]
+  print(f'Os números páres entre {num_inteiro1} e {num_inteiro2}: {numeros_inteiros}')
+  print(f'A soma de todos os números inteiros são: {sum(numeros_inteiros)}')
 
-# 11. Altere o programa anterior para mostrar no final a soma dos números.
 
 """
 12. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
@@ -164,6 +251,17 @@ Faça um programa que leia 5 números e informe o maior número.
         ...
         5 X 10 = 50
 """
+def questao12():
+  while True:
+    try:
+      numero = int(input('Digite um número entre 1 e 10, para gerar a tabuada: '))
+      if numero >= 0 or numero <= 10
+      for x in range(1, 11):
+        print(f'{numero} x {x} = {numero * x}')
+      break
+    except:
+      print('Digite um número válido, entre 1 e 10.')
+
 
 """
 13. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
