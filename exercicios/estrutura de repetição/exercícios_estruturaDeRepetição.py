@@ -266,12 +266,84 @@ def questao12():
 """
 13. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
 """
+def questao13():
+  print('''
+  --------------------------
+  Elevando número a expoente
+  --------------------------
+  '''
+      )
+  while True:
+    try:
+      numero_base = float(input('Digite um número base para uma potência: '))
+      expoente = int(input('Digite um número para ser o expoente: '))
+      print(f'{numero_base} elevado a {expoente} = {numero_base**expoente:.2f}')
+    except ValueError:
+      print('Digite números válidos.')
+      
+'''
+14. Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
+'''
+from itertools import count
+def questao14():
+  numeros = []
+  contador = count()
 
-# 14. Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
+  print('''
+  --------------------------
+  Separando números pares de impares
+  --------------------------
+  '''
+      )
 
-# 15. A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo.
+  for x in contador:
+    try:
+      numero = int(input('Digite um número: '))
+      numeros.append(numero)
+      if len(numeros) == 10:
+        break
+    except ValueError:
+      print('Digite apenas números.')
 
-# 16. A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500.
+  numeros_pares = [x for x in numeros if x % 2 == 0]
+  numeros_impares = [x for x in numeros if x % 2 != 0]
+
+  print(f'''
+  Os números pares são: {numeros_pares}
+  Os números impares são: {numeros_impares}
+  ''')
+  
+'''
+15. A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo.
+'''
+def questao15():
+  penultimo = 1
+  ultimo = 1
+  contagem = 10
+  fibonacci = [penultimo, ultimo]
+
+  for n in range(1, contagem):
+    valor = penultimo + ultimo
+    penultimo = ultimo
+    ultimo = valor
+    fibonacci.append(valor)
+    
+'''
+16. A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500.
+'''
+def questao16():
+  penultimo = 0
+  ultimo = 1
+  fibonacci = [penultimo, ultimo]
+
+  while max(fibonacci) <= 500:
+    valor = penultimo + ultimo
+    penultimo = ultimo
+    ultimo = valor
+    fibonacci.append(valor)
+  
+  print(fibonacci)
+  
 
 # 17. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
 
