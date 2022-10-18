@@ -10,7 +10,7 @@ def questao1():
         break
       elif nota < 0 or nota > 10:
         print('Digite um número entre 0 e 10.')
-    except:
+    except ValueError:
       print('Valor digitado, inválido. Tente novamente, digite uma nota.')
 
 
@@ -51,7 +51,7 @@ def solicitar_idade():
     try:
       idade = int(input('Digite sua idade: '))
       break
-    except:
+    except ValueError:
       print('Digite a idade em número.')
   return idade
 
@@ -64,7 +64,7 @@ def solicitar_salario():
         break
       else:
         print('Digite um salário, 0 ou mais.')
-    except:
+    except ValueError:
       print('Digite um valor válido.')
   return salario
 
@@ -146,7 +146,7 @@ def pegue_paisA():
     try:
       paisA = int(input('Número da população do Pais A: '))
       break
-    except:
+    except ValueError:
       print('Digite número válido.')
   return paisA
 
@@ -155,7 +155,7 @@ def pegue_paisB():
     try:
       paisB = int(input('Número da população do Pais B: '))
       break
-    except:
+    except ValueError:
       print('Digite número válido.')
   return paisB
 
@@ -167,7 +167,7 @@ def crescimento():
      ppaisA = (crescimento_paisA / 100) + 1
      ppaisB = (crescimento_paisB / 100) + 1
      break
-   except:
+   except ValueError:
      print('Digite valores válidos, 0 a 100.)')
  return ppaisA, ppaisB
 
@@ -259,7 +259,7 @@ def questao12():
       for x in range(1, 11):
         print(f'{numero} x {x} = {numero * x}')
       break
-    except:
+    except ValueError:
       print('Digite um número válido, entre 1 e 10.')
 
 
