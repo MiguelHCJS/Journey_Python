@@ -344,9 +344,27 @@ def questao16():
   
   print(fibonacci)
   
+'''
+17. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+'''
+from math import factorial
 
-# 17. Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+def questao17():
+  try:
+    numero = int(input('Digite um número para saber o seu fatorial(n!): '))
 
+    print()
+    print(f'Com o módulo math: {factorial(numero)}')
+    print()
+
+    for x in range(1, numero):
+      numero = numero * x
+    print(f'Sem módulo: {numero}')
+
+  except ValueError:
+    print('Digite um número válido.')
+    
+    
 # 18. Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores.
 
 # 19. Altere o programa anterior para que ele aceite apenas números entre 0 e 1000.
