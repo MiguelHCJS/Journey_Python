@@ -1,4 +1,4 @@
-# Nivel 1 - Coleções
+# Nível 1 — Coleções
 
 - [ ] Utilizar listas e tuplas
 - [ ] Utilizar polimorfismo nas coleções

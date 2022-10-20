@@ -87,10 +87,8 @@
     É um par de chave e valor, a chave no dicionário não se repete.
     
         dicionario = {'nome': 'valor', 'idade': valor}
-    
-    ## Árvores
 
-- [ ] Implementar as principais estruturas de dados
+- [x] Implementar as principais estruturas de dados
 
 [Artigos relacionados](https://techguide.sh/pt-BR/path/python/data-structures/)
 
