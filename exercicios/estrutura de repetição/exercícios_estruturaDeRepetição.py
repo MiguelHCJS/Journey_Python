@@ -365,12 +365,68 @@ def questao17():
     print('Digite um número válido.')
     
     
-# 18. Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores.
+# 18 E 19. Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores. aceite apenas números entre 0 e 1000.
+from random import randint
 
-# 19. Altere o programa anterior para que ele aceite apenas números entre 0 e 1000.
+def determine_extremos(conjunto):
+  extremo = min(conjunto) + max(conjunto)
+  return f'Extremo: \n Soma do menor e maior valor da lista: {conjunto}, extremo: {extremo}'
 
+def questao18e19():
+  conjunto_n = [] 
+
+  while len(conjunto_n) <= 9:
+    conjunto_n.append(randint(1, 1000))
+
+  print(determine_extremos(conjunto_n))
+
+  
 # 20. Altere o programa de cálculo do fatorial, permitindo ao usuário calcular o fatorial várias vezes e limitando o fatorial a números inteiros positivos e menores que 16.
+from math import factorial
 
+def aplicar_fatorial(numero):
+  print()
+  print(f'Com o módulo math: {factorial(numero)}')
+  print()
+
+  for x in range(1, numero):
+    numero = numero * x
+
+  return print(f'Sem módulo: {numero}')
+
+def questao20():
+  try:
+    repetir = True
+    while repetir == True:
+  
+      numero = int(input('Digite um número para saber o seu fatorial(n!): '))
+
+      if numero > 0 and numero <= 16:
+        aplicar_fatorial(numero)
+        repetir = input('[C]ontinuar, [S]air').lower()
+        if repetir == 'c':
+          repetir = True
+        elif repetir == 's':
+          break
+        else:
+          print('Escolha inválida.')
+          break
+      
+      else:
+        print('Digite um número entre 0 e 16.')
+        repetir = input('[C]ontinuar, [S]air').lower()
+        if repetir == 'c':
+          repetir = True
+        elif repetir == 's':
+          break
+        else:
+          print('Escolha inválida.')
+          break
+
+  except ValueError:
+    print('Digite um número válido.')
+    
+    
 # 21. Faça um programa que peça um número inteiro e determine se ele é ou não um número primo. Um número primo é aquele que é divisível somente por ele mesmo e por 1.
 
 # 22. Altere o programa de cálculo dos números primos, informando, caso o número não seja primo, por quais número ele é divisível.
