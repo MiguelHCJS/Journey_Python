@@ -426,10 +426,24 @@ def questao20():
   except ValueError:
     print('Digite um número válido.')
     
-    
-# 21. Faça um programa que peça um número inteiro e determine se ele é ou não um número primo. Um número primo é aquele que é divisível somente por ele mesmo e por 1.
+'''  
+# 21 e 22. Faça um programa que peça um número inteiro e determine se ele é ou não um número primo.
+Um número primo é aquele que é divisível somente por ele mesmo e por 1.
+Caso o número não seja primo, por quais número ele é divisível.
+'''
+while True:
+  try:
+    numero_teste = int(input('Digite um número para testar se é primo: '))
+    quantidade = len([x for x in range(2, numero_teste) if numero_teste % x == 0])
 
-# 22. Altere o programa de cálculo dos números primos, informando, caso o número não seja primo, por quais número ele é divisível.
+    if quantidade == 0:
+      print(f'O {numero_teste} é primo.')
+    else:
+      print(f'O {numero_teste} não é primo, é divisivel pelos números: {[x for x in range(2, numero_teste) if numero_teste % x == 0]}.')
+      break
+  except:
+    print('Digite um dado válido, um número inteiro.')
+
 
 # 23. Faça um programa que mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. O programa deverá mostrar também o número de divisões que ele executou para encontrar os números primos. Serão avaliados o funcionamento, o estilo e o número de testes (divisões) executados.
 
