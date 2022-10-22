@@ -1,6 +1,6 @@
 """ -- QUESTÃO 1 --
-  Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue
-  pedindo até que o usuário informe um valor válido.
+Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue
+pedindo até que o usuário informe um valor válido.
 """
 
 
@@ -18,8 +18,8 @@ def questao1():
 
 
 ''' -- QUESTÃO 2 --
-  Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário,
-  mostrando uma mensagem de erro e voltando a pedir as informações.
+Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário,
+mostrando uma mensagem de erro e voltando a pedir as informações.
 '''
 
 
@@ -35,7 +35,7 @@ def questao2():
 
 
 """ -- QUESTÃO 3 --
-  Faça um programa que leia e valide as seguintes informações:
+Faça um programa que leia e valide as seguintes informações:
     1. Nome: maior que 3 caracteres;
     2. Idade: entre 0 e 150;
     3. Salário: maior que zero;
@@ -495,7 +495,29 @@ while True:
     except:
         print('Digite um dado válido, um número inteiro.')
 
-# 23. Faça um programa que mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. O programa deverá mostrar também o número de divisões que ele executou para encontrar os números primos. Serão avaliados o funcionamento, o estilo e o número de testes (divisões) executados.
+
+"""
+23. Faça um programa que mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. O programa deverá mostrar também o número de divisões que ele executou para encontrar os números primos. Serão avaliados o funcionamento, o estilo e o número de testes (divisões) executados.
+"""
+def se_primo(num):
+    quantidade = len([x for x in range(2, num) if num % x == 0])
+    
+    if quantidade == 0:
+        print(f'O número {num} é primo, quantidade de divisões executadas: {num - 1}.\n')
+    else:
+        print(
+            f'O número {num} não é primo, é divisivel pelos números: {[x for x in range(2, num + 1) if num % x == 0]}.\n')
+
+def questao23():
+    while True:
+        try:
+            num = int(input('Digite um número: '))
+
+            print([i for i in range(2, num + 1) if se_primo(i)])
+            break
+        except ValueError:
+            print('Digite um valor válido.')
+
 
 # 24. Faça um programa que calcule o mostre a média aritmética de N notas.
 
