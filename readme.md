@@ -20,8 +20,6 @@ Estou montando este repositório para eu poder manter o roteiro atualizado e gar
 - [ ] [Django Rest Framework]()
 - [ ] [Flask]()
 
-Neste momento ou até antes, já pretendo ter publicado um repositório no qual aplicarei praticamente tudo acima listado, para aplicar em um projeto Python+RPG.
-
 ### Nível 3
 
 - [ ] [Tipagem estática]()
