@@ -520,9 +520,92 @@ def questao23():
 
 
 # 24. Faça um programa que calcule o mostre a média aritmética de N notas.
+def questao24():
+  notas = []
+
+  def adicionar_nota():
+    nota = int(input('Digite a primeira nota: '))
+    notas.append(nota)
+
+  def listar_notas():
+    for n, m in enumerate(notas):
+      print(f'N° {n} Nota: {m}')
+
+  def media():
+    print(f'Média das notas: {sum(notas) / len(notas):.f0} de {len(notas)} notas')
+
+
+  while True:
+    try:
+      opcao = int(input("""
+      Digite uma opção:
+      1. Adicionar nota
+      2. Listar notas
+      3. Nota mais alta
+      4. Nota mais baixa
+      5. Média de notas
+      6. Sair
+      """))
+
+      if opcao == 1:
+        adicionar_nota()
+      elif opcao == 2:
+        listar_notas()
+      elif opcao == 3:
+        print(f'Maior nota: {max(notas)}')
+      elif opcao == 4:
+        print(f'Menor nota: {min(notas)}')
+      elif opcao == 5:
+        media()
+      elif opcao == 6:
+        break
+
+    except ValueError:
+      print('Digite uma opção válida.')
+    
 
 # 25. Faça um programa que peça para n pessoas a sua idade, ao final o programa devera verificar se a média de idade da turma varia entre 0 e 25,26 e 60 e maior que 60; e então, dizer se a turma é jovem, adulta ou idosa, conforme a média calculada.
+def questao25():
+  turma = {}
 
+  def media_turma():
+    soma = sum([x for x in turma.values()]) / len(turma.keys())
+    return soma
+
+  def adicionar_aluno():
+    nome = input('Digite o nome do aluno: ')
+    idade = int(input('Digite a idade do aluno: '))
+    turma[nome] = idade
+
+  def listar():
+    for chave in turma.keys():
+      print(f'Nome: {chave}\nIdade: {turma[chave]}\n')
+
+  while True:
+    try:
+      opcao = int(input("""
+      Digite uma opção:
+      1. Adicionar aluno e nota
+      2. Listar alunos e nota
+      3. Média de notas
+      4. Sair
+      """))
+
+      if opcao == 1:
+        adicionar_aluno()
+      elif opcao == 2:
+        listar()
+        break
+      elif opcao == 3:
+        media_turma()
+        break
+      elif opcao == 4:
+        break
+
+    except ValueError:
+      print('Digite uma opção válida.')
+
+    
 # 26. Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
 
 # 27. Faça um programa que calcule o número médio de alunos por turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para cada turma. As turmas não podem ter mais de 40 alunos.
