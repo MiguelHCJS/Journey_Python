@@ -4,30 +4,30 @@ Estou montando este repositório para eu poder manter o roteiro atualizado e gar
 
 ### Nível 1
 
-- [x] [Python Fundamentos](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/00_python-fundamentos.md)
-- [x] [Estrutura de dados](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/01_estrutura_de_dados.md)
-- [ ] [Coleções]()
-- [x] [Conceito de Orientação a objeto]()
-- [x] [Métodos especiais]()
+[Python Fundamentos](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/00_python-fundamentos.md)
+[Estrutura de dados](https://github.com/MiguelHCJS/Journey_Python/blob/master/niveis_techGuide/nivel1/01_estrutura_de_dados.md)
+[Coleções]()
+[Conceito de Orientação a objeto]()
+[Métodos especiais]()
 
 ### Nível 2
 
-- [ ] [Python testes]()
-- [ ] [Design patterns]()
-- [ ] [Sobrecarga de operações]()
-- [ ] [Mixins]()
-- [ ] [Django]()
-- [ ] [Django Rest Framework]()
-- [ ] [Flask]()
+[Python testes]()
+[Design patterns]()
+[Sobrecarga de operações]()
+[Mixins]()
+[Django]()
+[Django Rest Framework]()
+[Flask]()
 
 ### Nível 3
 
-- [ ] [Tipagem estática]()
-- [ ] [Geradores]()
-- [ ] [Corrotinas]()
-- [ ] [Metaprogramação]()
-- [ ] [MVC e MTV]()
-- [ ] [Pooling de processos]()
+[Tipagem estática]()
+[Geradores]()
+[Corrotinas]()
+[Metaprogramação]()
+[MVC e MTV]()
+[Pooling de processos]()
 
 [TechGuide_Alura](https://techguide.sh/pt-BR/path/python/)
 

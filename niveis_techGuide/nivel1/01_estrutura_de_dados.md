@@ -1,6 +1,6 @@
 # Nível 1 — Estrutura de dados
 
-- [x] Conhecer as principais estruturas de dados
+    Conhecer as principais estruturas de dados
 
     Normalmente os dados são tratados em conjunto, existe varias formas de unir, relacionar, tratar, processar,
     chamados estrutura de dados.
@@ -88,7 +88,7 @@
     
         dicionario = {'nome': 'valor', 'idade': valor}
 
-- [x] Implementar as principais estruturas de dados
+    Implementar as principais estruturas de dados
 
 [Artigos relacionados](https://techguide.sh/pt-BR/path/python/data-structures/)
 
