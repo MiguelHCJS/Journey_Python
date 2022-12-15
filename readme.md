@@ -33,28 +33,6 @@ Estou montando este repositório para eu poder manter o roteiro atualizado e gar
 
 <br><br>
 
-# **Exercícios**
-
-### [Sequenciais](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20sequencial/exerc%C3%ADcios_estruturaSequencial.py)
-
-### [Repetição](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20de%20repeti%C3%A7%C3%A3o/exerc%C3%ADcios_estruturaDeRepeti%C3%A7%C3%A3o.py)
-
-### [Decisão](https://github.com/MiguelHCJS/Journey_Python/blob/master/exercicios/estrutura%20de%20decisao/exerc%C3%ADcios_estruturaDeDecisao.py)
-
-### [Listas]()
-
-### [Funções]()
-
-### [Com strings]()
-
-### [Arquivos]()
-
-### [Classes]()
-
-<br><br>
-
 # **Sobre**
 
-### [Sobre listas]()
-
-### [Sobre dicionários]()
+### [Sobre estruturas de dados]()
